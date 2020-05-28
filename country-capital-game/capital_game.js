@@ -3,14 +3,14 @@
 
 $( document ).ready(function() {
     var firebaseConfig = {
-        apiKey: "AIzaSyD8vdTlPhekQZMf1rx1heGDHZbtFwhuCa0",
-        authDomain: "country-capital-702a0.firebaseapp.com",
-        databaseURL: "https://country-capital-702a0.firebaseio.com",
-        projectId: "country-capital-702a0",
-        storageBucket: "country-capital-702a0.appspot.com",
-        messagingSenderId: "984563988335",
-        appId: "1:984563988335:web:e665e3f1020a5d42089a9a",
-        measurementId: "G-V2CTZ12D93"
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: ""
       };
       // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
@@ -153,7 +153,7 @@ $( document ).ready(function() {
     }
 
     function update_map(place){
-        var link = src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDebeaPDQm6k1hGFWw9A-nRryhYlYZtQW4&language=en&q=";
+        var link = src="https://www.google.com/maps/embed/v1/search?key=APIKEY&language=en&q=";
         link += place;
         $('iframe').attr('src', link);
     }
