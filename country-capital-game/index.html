@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Zhakupova Naziya 20170907</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+    <link href="./capital_game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Your HTML here-->
+    <div id = "map">
+      <iframe
+      width="600"
+      height="450"
+      frameborder="0" 
+      src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDebeaPDQm6k1hGFWw9A-nRryhYlYZtQW4&language=en&q=France" >
+    </iframe>
+   
+    </div>
+    
+    <h1>Do you know the capital of this country?</h1>
+    <table>
+      <tr>
+        <th><b>Country</b></th>
+        <th><b>Capital</b></th>
+        <th><b>Answer</b></th>
+      </tr>
+      <tr>
+        <th id="pr2__question"></th>
+        <th>
+          <form>
+            <input id = "pr2__answer" type="text" placeholder = "Your Answer">
+          </form> 
+        </th>
+        <th><button id = "pr2__submit">See Answer</button></th>
+      </tr>
+      <tr>
+        <th>
+          <input type="radio" name="display" checked="checked" value="all" id="all">
+          <label for = "all">All</label>
+        
+          <input type="radio" name="display" value="correct" id="correct">
+          <label for = "correct">Correct Only</label>
+        </th>
+        <th>
+          <input type="radio" name="display" value="incorrect" id="incorrect">
+          <label for = "incorrect">Incorrect Only</label>
+        </th>
+       <th></th>
+      </tr>
+      <tr>
+        <th><button id="pr3__clear">Clear</button><button id="pr3__undo">Undo</button><button id = "pr3__restart">Restart</button></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </table>
+
+    
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+    <script src="./capital_game.js"></script>
+  </body>
+</html>
